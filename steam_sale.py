@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 async def fetch_sale_data():
-    driver = webdriver.Chrome()
+    driver = webdriver.Firefox()
     # driver.get(
     #     "https://steamdb.info/sales/?min_reviews=500&min_rating=60&min_discount=60&category=401")
 
