@@ -34,7 +34,6 @@ async def update_function(ctx):
         for key in leaderboard_dict.keys():
             message_text = f'{message_text}\n**{leaderboard_dict[key]["Player Name"]}**: {key}'
         await leaderboard_message.edit(content=message_text)
-    # print(leaderboard_json)
 
 
 async def hourly_update():
