@@ -7,13 +7,9 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 async def fetch_sale_data():
-    driver = webdriver.Firefox()
-    # driver.get(
-    #     "https://steamdb.info/sales/?min_reviews=500&min_rating=60&min_discount=60&category=401")
-
+    driver = webdriver.Chrome()
     driver.get(
         "https://steamdb.info/sales/?min_reviews=500&min_rating=0&min_discount=60&category=401")
-    # assert "Python" in driver.title
 
     element = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located(

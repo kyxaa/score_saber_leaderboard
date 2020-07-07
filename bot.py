@@ -105,7 +105,7 @@ async def on_ready():
 
 
 @bot.command()
-async def update(ctx):
+async def leaderboard(ctx):
     await update_leaderboard(ctx)
 
 
