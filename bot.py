@@ -109,7 +109,7 @@ async def leaderboard(ctx):
     await update_leaderboard(ctx)
 
 
-@bot.command(help="Use this command in #steam-vr-sales and to refresh the salesboard.", brief="Refreshes the salesboard")
+@bot.command(help="Use this command in #steam-vr-sales to refresh the salesboard.", brief="Refreshes the salesboard")
 async def sales(ctx):
     await update_sales(ctx)
 
