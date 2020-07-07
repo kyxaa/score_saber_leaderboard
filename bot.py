@@ -104,12 +104,12 @@ async def on_ready():
     print(df.to_string(index=False))
 
 
-@bot.command()
+@bot.command(help="Use this command in #score-saber-leaderboard to refresh the leaderboard.", brief="Refreshes the leaderboard")
 async def leaderboard(ctx):
     await update_leaderboard(ctx)
 
 
-@bot.command()
+@bot.command(help="Use this command in #steam-vr-sales and to refresh the salesboard.", brief="Refreshes the salesboard")
 async def sales(ctx):
     await update_sales(ctx)
 
