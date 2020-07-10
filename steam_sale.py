@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 async def fetch_sale_data():
     driver = webdriver.Chrome()
     driver.get(
-        "https://steamdb.info/sales/?min_reviews=500&min_rating=0&min_discount=50&category=401")
+        "https://steamdb.info/sales/?min_reviews=500&min_rating=0&min_discount=30&category=401")
 
     element = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located(
